@@ -1,26 +1,28 @@
 const fs = require("fs");
 module.exports.config = {
-  name: "Rohit",
-    version: "1.0.1",
+  name: "Assalamu alaikkum",
+    version: "1.1.1",
   hasPermssion: 0,
   credits: "FAIZ ANSARI", 
-  description: "hihihihi",
+  description: "Just Respond",
   commandCategory: "no prefix",
-  usages: "Rohit",
     cooldowns: 5, 
 };
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
   var { threadID, messageID } = event;
-  if (event.body.indexOf("rohit")==0 || event.body.indexOf("Rohit")==0 || event.body.indexOf("@Rohit")==0 || event.body.indexOf("ROHIT")==0) {
+  let react = event.body.toLowerCase();
+  if(react.includes("asalamu alaikum") ||
+     react.includes("assalamu alaikkum") || react.includes("Assalamu alaikkum") || react.includes("ASALAMU ALAIKUM") ||
+react.includes("Assalamualaikum") ||
+react.includes("Assalamu Alaikum")) {
     var msg = {
-        body: "❤️𝐘𝐄 𝐋𝐎 ROHIT 𝐉𝐈 𝐀 𝐆𝐀𝐈🙈",
-        attachment: fs.createReadStream(__dirname + `/FAIZ/rohit.jpg`)
+        body: `♥ W'aleykum Assalam Wa'rahmatullahi Wa'barakatuh ❤️`,
       }
       api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("😇", event.messageID, (err) => {}, true)
+    api.setMessageReaction("❤️", event.messageID, (err) => {}, true)
     }
   }
   module.exports.run = function({ api, event, client, __GLOBAL }) {
 
-        }
+  }
