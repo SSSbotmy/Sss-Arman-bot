@@ -13,7 +13,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
   var { threadID, messageID } = event;
   let react = event.body.toLowerCase();
   if(react.includes("asalamu alaikum") ||
-     react.includes("assalamu alaikkum") || react.includes("Assalamu alaikkum") || react.includes("ASALAMU ALAIKUM") ||
+     react.includes("ASALAMUALAIKUM") || react.includes("Assalamu alaikkum") || react.includes("ASALAMU ALAIKUM") ||
 react.includes("Assalamualaikum") ||
 react.includes("Assalamu Alaikum")) {
     var msg = {
