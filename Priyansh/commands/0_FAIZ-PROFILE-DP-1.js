@@ -1,8 +1,8 @@
 module.exports.config = {
-  name: "dp",
+  name: "1dp",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "PREM BABU",
+  credits: "FAIZ ANSARI",
   description: "THIS BOT IS MADE BY PREM BABU",
   usePrefix: true,
   commandCategory: "PROFILE DP",
@@ -57,7 +57,7 @@ module.exports.run = async function ({ args, Users, Threads, api, event, Currenc
 
   var background = [
 
-    "https://i.imgur.com/7hw5rEj.jpg"
+    "https://i.imgur.com/b3GDb4C.png"
 ];
   var rd = background[Math.floor(Math.random() * background.length)];
 
