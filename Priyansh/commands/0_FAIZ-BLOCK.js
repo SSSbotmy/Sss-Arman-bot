@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "block",
 	version: "1.0.0",
 	hasPermssion: 2,
-	credits: "FAIZa",
+	credits: "Aadi Gupta",
 	description: "Block user",
   usages: "[uid/fb link/mention]",
 	commandCategory: "...",
