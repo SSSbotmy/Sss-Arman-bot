@@ -8,7 +8,7 @@ module.exports = {
     name: "music",
     version: "1.0.0",
     hasPermssion: 0,
-    credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
+    credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡  𝐑𝐚𝐣𝐩𝐮𝐭",
     description: "Download youtube song from keyword search and link",
     commandCategory: "Media",
     usages: "[songName] [type]",
@@ -33,7 +33,7 @@ module.exports = {
       type = "audio";
     }
 
-    const apiUrl = `https://07e8363c-50e9-433d-a6b5-c9e18ca3e2df-00-3m6psysyh8j6u.sisko.replit.dev/yt?song=${encodeURIComponent(songName)}&type=${encodeURIComponent(type)}&apikey=priyansh-here`;
+    const apiUrl = `https://07e8363c-50e9-433d-a6b5-c9e18ca3e2df-00-3m6psysyh8j6u.sisko.replit.dev/yts?song=${encodeURIComponent(songName)}&type=${encodeURIComponent(type)}&apikey=priyansh-here`;
 
     const processingMessage = await api.sendMessage(
       "✅ Processing your request. Please wait...",
